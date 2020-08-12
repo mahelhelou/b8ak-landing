@@ -1,0 +1,216 @@
+// Importing modules
+// @import 'bootstrap';
+// @import 'fontawesome-all';
+
+// Updating variables
+$primary: #3292a6;
+$primary-overlay: rgba(50, 146, 166, 0.8);
+$blue: #3292a6;
+
+// GENERAL RULES
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  padding-top: 95px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+}
+
+.text-black-50:hover {
+  color: #FFC51A;
+  transition: .4s all ease-in-out;
+}
+
+// Navbar
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  background-color: #fff;
+
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+  }
+}
+
+// Showcase
+#showcase {
+  background-image: url(../../images/hero-bg.jpg);
+  min-height: 600px;
+
+  .primary-overlay {
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .8;
+  }
+}
+
+// Why B8ak
+
+
+// Testimonials
+.testimonial {
+  background: #fff;
+  text-align: center;
+  padding: 30px 30px 50px;
+  margin: 0 15px 100px;
+  position: relative;
+}
+
+.testimonial:before,
+.testimonial:after {
+  content: "";
+  border-top: 40px solid #fff;
+  border-right: 125px solid transparent;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
+.testimonial:after {
+  border-right: none;
+  border-left: 125px solid transparent;
+  left: auto;
+  right: 0;
+}
+
+.testimonial .icon {
+  display: inline-block;
+  font-size: 80px;
+  color: #FFC51A;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.testimonial .description {
+  font-size: 16px;
+  color: #333;
+  text-align: right;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+
+.testimonial .testimonial-content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.testimonial .pic {
+  display: inline-block;
+  border: 6px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px #daad86;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.testimonial .pic img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial .title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 0 0 5px 0;
+}
+
+.testimonial .post {
+  display: block;
+  font-size: 14px;
+  color: #ffd9b8;
+}
+
+
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: #ffd9b8;
+  border-color: #fff;
+}
+
+.pic img {
+  width: 100px !important;
+  height: 50px;
+}
+
+// Download
+
+
+/* Footer Styles */
+.nav {
+	text-align: center;
+	.social-icons {
+		.social-icons-item {
+			display: inline-block;
+		}
+	}
+}
+.social-icons-item {
+	.fa {
+		font-size: 1.5em;
+		width: 1.5em;
+		height: 1.5em;
+		line-height: 1.5em;
+		border-radius: 100%;
+		color: #fff;
+	}
+	.fa-facebook {
+		background-color: #3b5998;
+		&:hover {
+			background-color: #fff;
+			color: #3b5998;
+			box-shadow: 0 0 0 2px #3b5998;
+		}
+	}
+	.fa-twitter {
+		background-color: #00aced;
+		&:hover {
+			background-color: #fff;
+			color: #00aced;
+			box-shadow: 0 0 0 2px #00aced;
+		}
+	}
+	.fa-instagram {
+		background-color: #e4405f;
+		&:hover {
+			background-color: #fff;
+			color: #517fa4;
+			box-shadow: 0 0 0 2px #517fa4;
+		}
+	}
+}
+
+
+// Showcase media queries
+@media (max-width: 768px) {
+  #showcase {
+    // min-height: 500px;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .btn-outline-secondary {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
