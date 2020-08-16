@@ -24,14 +24,14 @@
 <body id="home" data-spy="scroll" data-target="#main-menu">
   <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
     <div class="container">
-      <a href="#home" class="navbar-brand">
+      <a href="index.html" class="navbar-brand">
         <img src="images/logo.png" alt="شعار بيتك">
       </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#main-menu">
+      <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#main-menu">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
 
-      <div class="collapse navbar-collapse" id="main-menu">
+      <!-- <div class="collapse navbar-collapse" id="main-menu">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a href="#home" class="nav-link">الرئيسية</a></li>
           <li class="nav-item"><a href="#services" class="nav-link">خدماتنا</a></li>
@@ -39,7 +39,7 @@
           <li class="nav-item"><a href="#how-it-works" class="nav-link">كيف يعمل تطبيقنا</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">تواصل معنا</a></li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </nav>
 
@@ -78,7 +78,7 @@
   <!-- SERVICES -->
   <section id="services" class="py-5 text-center">
     <div class="container">
-      <h2 class="mb-5 text-black-50 display-5">خدماتنا</h2>
+      <h2 class="mb-5 text-black-50 display-5">الخدمات الأكثر شيوعًا</h2>
       <div class="row">
         <div class="col-md-2 mb-4">
           <img src="images/mokafaha-hasharat.svg" alt="" class="mb-2">
@@ -112,32 +112,52 @@
   <!-- WHY-B8AK -->
   <section id="why-b8ak" class="py-5 text-center bg-light">
     <h2 class="mb-5 text-black-50 display-5">لماذا تطبيق بيتك؟</h2>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3 mb-4">
+        <div class="col-md-3 mb-4 px-4">
           <img src="images/50-services.svg" alt="" class="mb-2">
           <h4 class="text-black-50 mt-4">أكثر من 50 خدمة صيانة</h4>
-          <p>جميع خدمات بيتك في تطبيق واحد بس!</p>
+          <p class="text-right">جميع خدمات بيتك في تطبيق واحد بس!</p>
         </div>
-        <div class="col-md-3 mb-4">
+        <div class="col-md-3 mb-4 px-4">
           <img src="images/guarantee.svg" alt="" class="mb-2">
           <h4 class="text-black-50 mt-4">ضمان على الخدمات</h4>
-          <p>ضمان على الخدمات يصل حتى 30 يوم!</p>
+          <p class="text-right">ضمان على الخدمات يصل حتى 30 يوم!</p>
         </div>
-        <div class="col-md-3 mb-4">
+        <div class="col-md-3 mb-4 px-4">
           <img src="images/price.svg" alt="" class="mb-2">
           <h4 class="text-black-50 mt-4">أسعار و عروض دائمة</h4>
-          <p>نقدم لكم أفضل الأسعار و العروض الدائمة في تطبيق بيتك بشكل دائم و مستمر!</p>
+          <p class="text-right">نقدم لكم أفضل الأسعار و العروض الدائمة في تطبيق بيتك بشكل دائم و مستمر!</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 px-4">
           <img src="images/providers.svg" alt="" class="mb-2">
           <h4 class="text-black-50 mt-4">مزودي خدمات معتمدين</h4>
-          <p>لتقديم الخدمة لك بأفضل طريقة ممكنة!</p>
+          <p class="text-right">لتقديم الخدمة لك بأفضل طريقة ممكنة!</p>
         </div>
       </div><!-- row-end -->
     </div>
   </section>
   <!-- WHY-B8AK-END -->
+
+  <!-- DOWNLOAD -->
+  <section id="download" class="py-5 text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5 text-black-50">حمل التطبيق و استمتع بخصم 10% على طلبك الأول مع كود "B10"</h2>
+      <div class="mt-5">
+        <div class="d-xs-block d-md-inline mb-2">
+          <a href="#">
+            <img src="images/google-play.svg" alt="بيتك تطبيق أندرويد" width="175">
+          </a>
+        </div>
+        <div class="d-xs-block d-md-inline">
+          <a href="#">
+            <img src="images/app-store.webp" alt="بيتك تطبيق ios" width="175">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- DOWNLOAD-END -->
 
   <!-- HOW-IT-WORKS -->
   <section id="how-it-works" class="py-5 text-center">
@@ -333,23 +353,23 @@
 
     $(document).ready(function () {
       $('.owl-carousel').owlCarousel({
-    rtl:true,
-    autoplay: true,
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
+        rtl: true,
+        autoplay: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
         }
-    }
-})
+      })
     });
 
   </script>

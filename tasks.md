@@ -1,3 +1,0 @@
-# Tasks
-
-- Mobile app links
