@@ -48,14 +48,13 @@ body {
 }
 
 .testimonial {
-  background: #fff;
+  /* background: #fff; */
   text-align: center;
   padding: 30px 30px 50px;
-  margin: 0 15px 100px;
   position: relative;
 }
 
-.testimonial:before,
+/* .testimonial:before,
 .testimonial:after {
   content: "";
   border-top: 40px solid #fff;
@@ -63,18 +62,16 @@ body {
   position: absolute;
   bottom: -40px;
   left: 0;
-}
-
-.testimonial:after {
+}*/
+/* .testimonial:after {
   border-right: none;
   border-left: 125px solid transparent;
   left: auto;
   right: 0;
-}
-
+} */
 .testimonial .icon {
   display: inline-block;
-  font-size: 80px;
+  font-size: 40px;
   color: #FFC51A;
   margin-bottom: 20px;
   opacity: 0.6;
@@ -94,22 +91,19 @@ body {
   left: 0;
 }
 
-.testimonial .pic {
+/* .testimonial .pic {
   display: inline-block;
   border: 6px solid white;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 2px 2px #daad86;
-          box-shadow: 0 0 2px 2px #daad86;
+  box-shadow: 0 0 2px 2px #daad86;
   overflow: hidden;
   z-index: 1;
   position: relative;
-}
-
-.testimonial .pic img {
+}*/
+/* .testimonial .pic img {
   width: 100%;
   height: auto;
-}
-
+} */
 .testimonial .title {
   font-size: 15px;
   font-weight: bold;
@@ -124,17 +118,15 @@ body {
   color: #ffd9b8;
 }
 
-.owl-theme .owl-controls .owl-page.active span,
+/* .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
   background: #ffd9b8;
   border-color: #fff;
-}
-
-.pic img {
+} */
+/* .pic img {
   width: 100px !important;
   height: 50px;
-}
-
+} */
 /* Footer Styles */
 .nav-icons {
   text-align: center;
