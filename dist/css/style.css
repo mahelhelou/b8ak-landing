@@ -41,6 +41,12 @@ body {
   opacity: .8;
 }
 
+@media screen and (max-width: 767px) {
+  #why-b8ak .col-md-3 p {
+    text-align: center !important;
+  }
+}
+
 .testimonial {
   background: #fff;
   text-align: center;
@@ -130,11 +136,11 @@ body {
 }
 
 /* Footer Styles */
-.nav {
+.nav-icons {
   text-align: center;
 }
 
-.nav .social-icons .social-icons-item {
+.nav-icons .social-icons .social-icons-item {
   display: inline-block;
 }
 

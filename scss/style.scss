@@ -52,6 +52,11 @@ body {
 }
 
 // Why B8ak
+#why-b8ak .col-md-3 p {
+  @media screen and (max-width: 767px) {
+    text-align: center !important;
+  }
+}
 
 
 // Testimonials
@@ -148,7 +153,8 @@ body {
 
 
 /* Footer Styles */
-.nav {
+.nav-icons {
+
 	text-align: center;
 	.social-icons {
 		.social-icons-item {
