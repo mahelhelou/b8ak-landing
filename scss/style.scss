@@ -64,7 +64,9 @@ body {
     }
   }
 
-  h3 {
+  h4.subtitle {
+    line-height: 36px;
+
     @media screen and (max-width: 767px) {
       font-size: 1.75rem !important;
     }

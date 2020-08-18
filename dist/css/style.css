@@ -55,8 +55,12 @@ body {
   }
 }
 
+#showcase h4.subtitle {
+  line-height: 36px;
+}
+
 @media screen and (max-width: 767px) {
-  #showcase h3 {
+  #showcase h4.subtitle {
     font-size: 1.75rem !important;
   }
 }
@@ -74,7 +78,6 @@ body {
 .testimonial {
   /* background: #fff; */
   text-align: center;
-  padding: 0 25px 20px 25px;
   position: relative;
 }
 
@@ -103,7 +106,7 @@ body {
 .testimonial .description {
   font-size: 16px;
   color: #333;
-  text-align: center;
+  text-align: right;
   margin-bottom: 30px;
   opacity: 0.7;
 }
