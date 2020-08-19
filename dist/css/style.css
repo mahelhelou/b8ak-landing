@@ -39,7 +39,7 @@ body {
 
 #showcase {
   background-image: url(../../images/hero-bg.jpg);
-  min-height: 600px;
+  /* min-height: 600px; */
 }
 
 #showcase .primary-overlay {
