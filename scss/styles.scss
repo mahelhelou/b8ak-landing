@@ -1,0 +1,182 @@
+// Importing modules
+@import 'libs/bootstrap';
+@import 'libs/fontawesome';
+@import 'libs/owl.carousel';
+
+// Updating variables
+$primary: #3292a6;
+$primary-overlay: rgba(50, 146, 166, 0.8);
+$blue: #3292a6;
+
+// GENERAL RULES
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  padding-top: 75px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+}
+
+.text-black-50:hover {
+  color: #FFC51A;
+  transition: .4s all ease-in-out;
+}
+
+// Navbar
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  background-color: #fff;
+
+  .navbar-brand {
+    @media screen and (max-width: 767px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// Showcase
+#showcase {
+  background-image: url(../../images/hero-bg.jpg);
+  min-height: 650px;
+
+  .primary-overlay {
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .8;
+  }
+
+  h1 {
+    @media screen and (max-width: 767px) {
+      font-size: 3rem !important;
+    }
+  }
+
+  h4.subtitle {
+    line-height: 36px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.75rem !important;
+    }
+  }
+
+  .buttons p {
+    color: #FFC51A
+  }
+}
+
+// Why B8ak
+#why-b8ak .col-md-3 p {
+  @media screen and (max-width: 767px) {
+    text-align: center !important;
+  }
+}
+
+
+// Testimonials
+#testimonials {
+  text-align: center;
+}
+
+.testimonial .icon {
+  display: inline-block;
+  font-size: 40px;
+  color: #FFC51A;
+  opacity: 0.6;
+}
+
+.testimonial .description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  opacity: 0.7;
+  padding: 5px;
+}
+
+.testimonial .title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Footer Styles */
+.nav-icons {
+  text-align: center;
+
+  .social-icons {
+    .social-icons-item {
+      display: inline-block;
+    }
+  }
+}
+
+.social-icons-item {
+  .fa {
+    font-size: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    border-radius: 100%;
+    color: #fff;
+  }
+
+  .fa-facebook {
+    background-color: #3b5998;
+
+    &:hover {
+      background-color: #fff;
+      color: #3b5998;
+      box-shadow: 0 0 0 2px #3b5998;
+    }
+  }
+
+  .fa-twitter {
+    background-color: #00aced;
+
+    &:hover {
+      background-color: #fff;
+      color: #00aced;
+      box-shadow: 0 0 0 2px #00aced;
+    }
+  }
+
+  .fa-instagram {
+    background-color: #e4405f;
+
+    &:hover {
+      background-color: #fff;
+      color: #517fa4;
+      box-shadow: 0 0 0 2px #517fa4;
+    }
+  }
+}
+
+
+// Showcase media queries
+@media (max-width: 768px) {
+  #showcase {
+    h1 {
+      font-size: 4rem;
+    }
+
+    .btn-outline-secondary {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
